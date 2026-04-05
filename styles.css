@@ -41,4 +41,12 @@ input {
     margin-top: 40px;
     gap: 10px;
     border-radius: 5px;
+    box-shadow: 1px #ddd;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #04fb00;
+    width: 200px;
 }
