@@ -1,10 +1,13 @@
-let items = [];
+// Define the array
+let shoppingItems = [];
 
+// Fetch your elements from your HTML code
 const name = document.getElementById("itemName");    
 const price = document.getElementById("itemPrice");
 const addButton = document.querySelector("addButton");
 const displayList = document.getElementById("displayList");
 
+// Check for validity of your inputs
 function checkInputType(name, price) {
     if (typeof price !== number && typeof name !== string ) {
         console.log("Input not valid");
@@ -12,3 +15,5 @@ function checkInputType(name, price) {
         console.log(`${key}: ${variable[key]}`);
     }
 }
+
+addButton.addEventListener("click", addItem);
