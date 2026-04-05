@@ -8,6 +8,8 @@
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 1200px;
+    margin: auto;
 }
 
 h1 {
@@ -15,4 +17,26 @@ h1 {
     text-align: center;
     margin: 40px auto;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+#inputForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 100%;
+    width: 500px;
+    height: 400px;
+    border: 1px solid #000000;
+    margin: 10px 40px;
+    gap: 15px;
+}
+
+input {
+    gap: 15px;
 }
