@@ -7,6 +7,18 @@ const price = document.getElementById("itemPrice");
 const addButton = document.querySelector("addButton");
 const displayList = document.getElementById("displayList");
 
+// Create a function to add your items
+function addItem(name, price) {
+    const name = itemName.value;
+    const price = itemPrice.value;
+}
+
+// Create object
+const itemObject = {
+    itemName: name,
+    itemPrice: price,
+};
+
 // Check for validity of your inputs
 function checkInputType(name, price) {
     if (typeof price !== number && typeof name !== string ) {
