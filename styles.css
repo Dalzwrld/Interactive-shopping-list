@@ -34,9 +34,11 @@ h1 {
     height: 400px;
     border: 1px solid #000000;
     margin: 10px 40px;
-    gap: 15px;
 }
 
 input {
-    gap: 15px;
+    padding: 10px;
+    margin-top: 40px;
+    gap: 10px;
+    border-radius: 5px;
 }
