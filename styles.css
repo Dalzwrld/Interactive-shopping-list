@@ -40,14 +40,14 @@ input {
     padding: 15px;
     margin: 20px 0;
     gap: 5px;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 1px #ddd;
     font-size: 1em;
 }
 
 button {
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: #04fb00;
     width: 250px;
     font-weight: bold;
