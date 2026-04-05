@@ -14,10 +14,13 @@ function addItem(name, price) {
 }
 
 // Create object
-const itemObject = {
+const shoppingItemsObject = {
     itemName: name,
     itemPrice: price,
 };
+
+// Add your object into your array
+shoppingItems.push(shoppingItemsObject);
 
 // Check for validity of your inputs
 function checkInputType(name, price) {
@@ -27,5 +30,6 @@ function checkInputType(name, price) {
         console.log(`${key}: ${variable[key]}`);
     }
 }
+
 
 addButton.addEventListener("click", addItem);
