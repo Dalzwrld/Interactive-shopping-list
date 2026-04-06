@@ -32,11 +32,16 @@ function displayItems() {
     // Clear out your old display
     displayList.innerHTML = "";
 
-    // Check for an empty list and prompt user to add items
-    if (shoppingItems.length === 0) {
-        displayList.innerHTML = "Please add an item";
-        return;
-    }
+    shoppingItems.forEach(item => {
+        const card = document.createElement("div");
+        card.classList.add("card");
+
+        card.innerHTML = `
+            <h4></h4>
+            <p></p>
+        `;
+    });
+
 }
 
 // Check for validity of your inputs
