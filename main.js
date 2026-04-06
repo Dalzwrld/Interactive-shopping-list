@@ -12,10 +12,10 @@ function addItem(name, price) {
     const name = itemName.value;
     const price = itemPrice.value;
 
-    // Create object
+    // Create an object to store each product with its price
     const shoppingItemsObject = {
         itemName: name,
-        itemPrice: price,
+        itemPrice: Number(price),
     };
 
     // Add your object into your array
