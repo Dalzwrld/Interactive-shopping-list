@@ -11,16 +11,17 @@ const displayList = document.getElementById("displayList");
 function addItem(name, price) {
     const name = itemName.value;
     const price = itemPrice.value;
+
+    // Create object
+    const shoppingItemsObject = {
+        itemName: name,
+        itemPrice: price,
+    };
+
+    // Add your object into your array
+    shoppingItems.push(shoppingItemsObject);
+
 }
-
-// Create object
-const shoppingItemsObject = {
-    itemName: name,
-    itemPrice: price,
-};
-
-// Add your object into your array
-shoppingItems.push(shoppingItemsObject);
 
 // Check for validity of your inputs
 function checkInputType(name, price) {
