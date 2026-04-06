@@ -32,8 +32,9 @@ function displayItems() {
     // Clear out your old display
     displayList.innerHTML = "";
 
+    // Check for an empty list and prompt user to add items
     if (shoppingItems.length === 0) {
-        displayList.innerHTML = "Please write an item";
+        displayList.innerHTML = "Please add an item";
         return;
     }
 }
