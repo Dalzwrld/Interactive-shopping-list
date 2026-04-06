@@ -32,13 +32,15 @@ function displayItems() {
     // Clear out your old display
     displayList.innerHTML = "";
 
+    // Create a card that'll display your items after addition
     shoppingItems.forEach(item => {
         const card = document.createElement("div");
         card.classList.add("card");
 
         card.innerHTML = `
-            <h4></h4>
-            <p></p>
+            <h4>${item.name}</h4>
+            <p>${item.price}</p>
+            <label><input type="checkbox" id="purchase"> Mark as purchased</label>
         `;
     });
 
