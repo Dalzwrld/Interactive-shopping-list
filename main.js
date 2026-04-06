@@ -21,6 +21,21 @@ function addItem(name, price) {
     // Add your object into your array
     shoppingItems.push(shoppingItemsObject);
 
+    // Clear out your input fields
+    itemName.value = "";
+    itemPrice.value = "";
+
+}
+
+// Create a new function to display your items in your display list
+function displayItems() {
+    // Clear out your old display
+    displayList.innerHTML = "";
+
+    if (shoppingItems.length === 0) {
+        displayList.innerHTML = "Please write an item";
+        return;
+    }
 }
 
 // Check for validity of your inputs
